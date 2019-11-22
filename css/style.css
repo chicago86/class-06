@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700,900&display=swap");
+body {
+  font: 300 17px/1.5 "Raleway", sans-serif;
+  background: #b07cf7;
+  color: white;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+}
+textarea {
+}
+.ba-section {
+  padding: 100px 0;
+}
+.ba-section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 90px;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 20px;
+}
+.ba-section-content {
+  text-align: center;
+  max-width: 570px;
+  margin: 0 auto 70px;
+}
+.ba-post a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  
+}
+.ba-post a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #000, transparent);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.ba-post-tate-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #262626;
+  opacity: 0.5;
+  text-align: center;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 1;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+span {
+  font-size: 30px;
+}
+.ba-items {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  z-index: 2;
+}
